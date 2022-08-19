@@ -6,6 +6,13 @@ class GildedRose
 
   def update_quality()
     @items.each do |item|
+      if ! special_items
+        item.quality = item.quality - 1
+    end
+  end
+
+  def update_quality()
+    @items.each do |item|
       if item.name != "Aged Brie" and item.name != "Backstage passes to a TAFKAL80ETC concert"
         if item.quality > 0
           if item.name != "Sulfuras, Hand of Ragnaros"
@@ -52,6 +59,26 @@ class GildedRose
     end
   end
 end
+
+class Normal_items
+end
+
+class Special_items
+  def initialize(item)
+    @special_items = special_items
+  end
+  def update_quality
+    special_items.quality = special_items.quality 
+  end
+end
+
+class Aged_brie < Special_items
+def update_quality
+  special_items += 1
+end
+
+end
+
 
 class Item
   attr_accessor :name, :sell_in, :quality
