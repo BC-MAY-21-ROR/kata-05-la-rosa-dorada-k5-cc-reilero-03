@@ -64,8 +64,10 @@ class Normal_items
   end
 
   def self.update_data
-    self.update_quality
-    self.update_sell_in
+    unless @items.nil? 
+      self.update_quality
+      self.update_sell_in
+    end
   end
 end
 
