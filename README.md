@@ -1,5 +1,11 @@
 ![BrightCoders Logo](img/logo-bc.png)
 
+# Ruby-critic Score badges
+App Score:
+<img src="lib/badges/app badge.svg">
+Test Score:
+<img src="lib/badges/test badge.svg">
+
 # Kata Gilded Rose Refactoring
 ![cover](img/cover.jpg)
 
